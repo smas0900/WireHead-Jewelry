@@ -4,25 +4,27 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated to copper, silver, and nature-inspired color palette */
-  --background: oklch(0.98 0.01 85); /* Soft natural cream */
-  --foreground: oklch(0.28 0.02 40); /* Deep forest brown */
-  --card: oklch(0.99 0.005 85);
-  --card-foreground: oklch(0.28 0.02 40);
-  --popover: oklch(0.99 0.005 85);
-  --popover-foreground: oklch(0.28 0.02 40);
+  /* Updated to cooler, more metallic silver-gray background */
+  /* Shifted to cool metallic background for modern gallery feel */
+  --background: oklch(0.96 0.005 240); /* Cool silver-gray background */
+  --foreground: oklch(0.28 0.02 240); /* Cool dark gray */
+  --card: oklch(0.97 0.004 240);
+  --card-foreground: oklch(0.28 0.02 240);
+  --popover: oklch(0.97 0.004 240);
+  --popover-foreground: oklch(0.28 0.02 240);
   --primary: oklch(0.48 0.09 30); /* Warm copper tone */
-  --primary-foreground: oklch(0.98 0.01 85);
+  --primary-foreground: oklch(0.97 0.004 240);
   --secondary: oklch(0.65 0 0); /* Cool silver tone */
   --secondary-foreground: oklch(0.15 0 0);
-  --muted: oklch(0.92 0.015 85);
-  --muted-foreground: oklch(0.5 0.02 45);
+  /* Adjusted muted and border colors to match cool metallic background */
+  --muted: oklch(0.9 0.008 240);
+  --muted-foreground: oklch(0.5 0.02 240);
   --accent: oklch(0.52 0.1 145); /* Natural moss green */
-  --accent-foreground: oklch(0.98 0.01 85);
+  --accent-foreground: oklch(0.97 0.004 240);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.98 0.01 85);
-  --border: oklch(0.88 0.015 85);
-  --input: oklch(0.88 0.015 85);
+  --destructive-foreground: oklch(0.97 0.004 240);
+  --border: oklch(0.86 0.01 240);
+  --input: oklch(0.86 0.01 240);
   --ring: oklch(0.48 0.09 30);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
@@ -30,13 +32,13 @@
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.75rem;
-  --sidebar: oklch(0.98 0.01 85);
-  --sidebar-foreground: oklch(0.28 0.02 40);
+  --sidebar: oklch(0.96 0.005 240);
+  --sidebar-foreground: oklch(0.28 0.02 240);
   --sidebar-primary: oklch(0.48 0.09 30);
-  --sidebar-primary-foreground: oklch(0.98 0.01 85);
-  --sidebar-accent: oklch(0.92 0.015 85);
-  --sidebar-accent-foreground: oklch(0.28 0.02 40);
-  --sidebar-border: oklch(0.88 0.015 85);
+  --sidebar-primary-foreground: oklch(0.96 0.005 240);
+  --sidebar-accent: oklch(0.9 0.008 240);
+  --sidebar-accent-foreground: oklch(0.28 0.02 240);
+  --sidebar-border: oklch(0.86 0.01 240);
   --sidebar-ring: oklch(0.48 0.09 30);
 }
 
@@ -81,20 +83,22 @@
   --font-serif: "Cormorant Garamond", serif;
 
   /* Updated color palette with copper, silver, and nature tones */
-  --color-background: 250 248 245; /* Natural cream */
-  --color-foreground: 55 45 35; /* Deep forest brown */
+  /* Updated RGB values to match cool metallic silver-gray background */
+  --color-background: 240 242 245; /* Cool silver-gray */
+  --color-foreground: 50 52 58; /* Cool dark gray */
 
   --color-primary: 150 90 70; /* Warm copper */
-  --color-primary-foreground: 250 248 245;
+  --color-primary-foreground: 240 242 245;
 
   --color-secondary: 180 185 188; /* Cool silver */
   --color-secondary-foreground: 30 30 30;
 
   --color-accent: 110 140 105; /* Natural moss green */
-  --color-accent-foreground: 250 248 245;
+  --color-accent-foreground: 240 242 245;
 
-  --color-muted: 240 235 228; /* Soft natural beige */
-  --color-muted-foreground: 110 95 80;
+  /* Adjusted muted color to match cool metallic background */
+  --color-muted: 225 230 235; /* Cool light gray */
+  --color-muted-foreground: 100 105 115;
 
   /* Adding sage green colors for notice bar */
   --color-sage-50: 245 247 245; /* Very light sage */

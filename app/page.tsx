@@ -3,54 +3,28 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Leaf, Sparkles } from "lucide-react"
 import { FeaturedProducts } from "@/components/featured-products"
 import { ScrollReveal } from "@/components/scroll-reveal"
+import { HeroSlider } from "@/components/hero-slider"
 
 export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative min-h-[25vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="/hero-jewelry.jpg"
-            alt="Handcrafted wire-wrapped jewelry"
-            className="w-full h-full object-cover animate-hero-bg"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-accent/40 via-foreground/50 to-background/95" />
-        </div>
-        <div className="container mx-auto px-4 lg:px-8 py-20 relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            {/* <div className="flex justify-center mb-6 animate-in fade-in duration-1000">
-              <Leaf className="h-12 w-12 text-primary" />
-            </div> */}
-            {/* this it the text that was apperating on the hero */}
-            
-            {/* <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-balance animate-in fade-in slide-in-from-bottom-4 duration-1000 text-background">
-              Nature-inspired <span className="text-primary">handcrafted</span> jewelry
-            </h1> */}
-            
-            {/* <p className="text-lg md:text-xl text-background/90 max-w-2xl mx-auto leading-relaxed text-balance animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
-              Each piece tells a story of artisan craftsmanship, blending natural beauty with timeless elegance
-            </p> */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-background">
-                <Link href="/shop">
-                  Explore Collection
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-secondary text-background hover:bg-secondary/20 bg-transparent"
-              >
-                <Link href="/shop">
-                  <Sparkles className="mr-2 h-5 w-5" />
-                  View Artisan Pieces
-                </Link>
-              </Button>
-            </div>
-          </div>
+      <section className="relative min-h-screen flex items-end overflow-hidden">
+        <HeroSlider />
+        <div className="absolute inset-0 z-10 bg-gradient-to-b from-accent/40 via-foreground/50 to-background/95" />
+        {/* </CHANGE> */}
+
+        <div className="container mx-auto px-4 lg:px-8 pb-12 relative z-20">
+          <Button
+            asChild
+            size="lg"
+            className="bg-primary hover:bg-primary/90 text-white shadow-2xl border-2 border-white/20 animate-in fade-in duration-1000 delay-300 text-lg px-8 py-6"
+          >
+            <Link href="/shop">
+              Shop Now
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
         </div>
       </section>
 
