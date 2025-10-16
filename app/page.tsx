@@ -1,9 +1,16 @@
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Leaf, Sparkles } from "lucide-react"
 import { FeaturedProducts } from "@/components/featured-products"
 import { ScrollReveal } from "@/components/scroll-reveal"
 import { HeroSlider } from "@/components/hero-slider"
+import FeaturedWithLampServer from "@/components/featured-with-lamp-server"
+
+// import React from "react";
+// import { motion } from "motion/react";
+// import { LampContainer } from "@/components/lamp-container";
+
 
 export default function HomePage() {
   return (
@@ -30,6 +37,10 @@ export default function HomePage() {
 
       {/* Featured Products */}
       <section className="py-20 bg-background">
+<FeaturedWithLampServer />
+
+
+
         <div className="container mx-auto px-4 lg:px-8">
           <ScrollReveal>
             <div className="text-center space-y-4 mb-12">
