@@ -1,16 +1,14 @@
-
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Leaf, Sparkles } from "lucide-react"
-import { FeaturedProducts } from "@/components/featured-products"
-import { ScrollReveal } from "@/components/scroll-reveal"
-import { HeroSlider } from "@/components/hero-slider"
-import FeaturedWithLampServer from "@/components/featured-with-lamp-server"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Leaf, Sparkles } from "lucide-react";
+import { FeaturedProducts } from "@/components/featured-products";
+import { ScrollReveal } from "@/components/scroll-reveal";
+import { HeroSlider } from "@/components/hero-slider";
+import FeaturedWithLampServer from "@/components/featured-with-lamp-server";
 
 // import React from "react";
 // import { motion } from "motion/react";
 // import { LampContainer } from "@/components/lamp-container";
-
 
 export default function HomePage() {
   return (
@@ -36,30 +34,36 @@ export default function HomePage() {
       </section>
 
       {/* Featured Products */}
-      <section className="py-20 bg-background">
-<FeaturedWithLampServer />
+      <section className="py-20 bg-background ">
 
+        <FeaturedWithLampServer />
+        {/* <div className="container mx-auto px-4 lg:px-8"> */}
 
-
-        <div className="container mx-auto px-4 lg:px-8">
-          <ScrollReveal>
-            <div className="text-center space-y-4 mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Featured Collection</h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                Handpicked pieces that showcase our finest craftsmanship
-              </p>
-            </div>
-          </ScrollReveal>
+          {/* <ScrollReveal> */}
+          {/* <div className="text-center space-y-4 mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+              Featured Collection
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Handpicked pieces that showcase our finest craftsmanship
+            </p>
+          </div> */}
+          
+          {/* </ScrollReveal>
           <ScrollReveal delay={200}>
-            <FeaturedProducts />
-          </ScrollReveal>
-        </div>
+            
+          </ScrollReveal> */}
+        {/* </div> */}
       </section>
 
       {/* Craftsmanship Section */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/jewelry-craftsmanship.jpg" alt="Handcrafted jewelry" className="w-full h-full object-cover" />
+          <img
+            src="/jewelry-craftsmanship.jpg"
+            alt="Handcrafted jewelry"
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-gradient-to-b from-accent/60 via-foreground/60 to-accent/60" />
         </div>
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
@@ -70,11 +74,16 @@ export default function HomePage() {
                 Handcrafted with Nature's Beauty
               </h2>
               <p className="text-lg md:text-xl text-background/90 leading-relaxed">
-                Every piece is lovingly crafted by hand using traditional wire-wrapping techniques and natural
-                gemstones. Our artisan approach celebrates the organic beauty found in nature, creating wearable art
-                that connects you to the earth.
+                Every piece is lovingly crafted by hand using traditional
+                wire-wrapping techniques and natural gemstones. Our artisan
+                approach celebrates the organic beauty found in nature, creating
+                wearable art that connects you to the earth.
               </p>
-              <Button asChild size="lg" className="mt-4 bg-primary hover:bg-primary/90 text-background">
+              <Button
+                asChild
+                size="lg"
+                className="mt-4 bg-primary hover:bg-primary/90 text-background"
+              >
                 <Link href="/shop">
                   Discover Our Craft
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -90,12 +99,18 @@ export default function HomePage() {
         <div className="container mx-auto px-4 lg:px-8">
           <ScrollReveal>
             <div className="text-center space-y-4 mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Shop by Category</h2>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+                Shop by Category
+              </h2>
             </div>
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: "Rings", image: "/luxury-gold-ring.jpg", category: "rings" },
+              {
+                name: "Rings",
+                image: "/luxury-gold-ring.jpg",
+                category: "rings",
+              },
               {
                 name: "Necklaces",
                 image: "/elegant-pearl-necklace.jpg",
@@ -137,7 +152,11 @@ export default function HomePage() {
       {/* New Handcrafted with Nature's Beauty Section */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/jewelry-craftsmanship.jpg" alt="Nature-inspired jewelry" className="w-full h-full object-cover" />
+          <img
+            src="/jewelry-craftsmanship.jpg"
+            alt="Nature-inspired jewelry"
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-accent/60 to-foreground/70" />
         </div>
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
@@ -148,12 +167,17 @@ export default function HomePage() {
                 Handcrafted with Nature's Beauty
               </h2>
               <p className="text-lg md:text-xl text-background/90 leading-relaxed">
-                Each gemstone is carefully selected for its unique character and natural beauty. Our copper and silver
-                wire-wrapping techniques honor ancient traditions while creating contemporary designs that celebrate the
-                raw elegance of nature's treasures.
+                Each gemstone is carefully selected for its unique character and
+                natural beauty. Our copper and silver wire-wrapping techniques
+                honor ancient traditions while creating contemporary designs
+                that celebrate the raw elegance of nature's treasures.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-background">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-background"
+                >
                   <Link href="/shop">
                     View All Pieces
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -173,5 +197,5 @@ export default function HomePage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
