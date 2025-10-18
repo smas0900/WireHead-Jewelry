@@ -123,7 +123,7 @@ export default function HomePage() {
               },
               {
                 name: "Bracelets",
-                image: "/gold-bracelet.png",
+                image: "/gold-bracelet.jpg",
                 category: "bracelets",
               },
             ].map((category, index) => (
