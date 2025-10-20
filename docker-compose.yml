@@ -1,0 +1,16 @@
+services:
+  web:
+    build:
+      context: .
+      args:
+        NODE_ENV: ${NODE_ENV:-development}
+    container_name: wirehead_app
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app # Mount project folder for dev
+      - /app/node_modules # Keep node_modules inside container
+    environment:
+      - NODE_ENV=${NODE_ENV:-development}
+      - CHOKIDAR_USEPOLLING=true
+      - NEXT_TELEMETRY_DISABLED=1
