@@ -1,14 +1,12 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Leaf, Sparkles } from "lucide-react";
-import { FeaturedProducts } from "@/components/featured-products";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { HeroSlider } from "@/components/hero-slider";
 import FeaturedWithLampServer from "@/components/featured-with-lamp-server";
+import MovingCards from "@/components/moving-cards"; //
+import { PixelImage } from "@/components/ui/pixel-image"
 
-// import React from "react";
-// import { motion } from "motion/react";
-// import { LampContainer } from "@/components/lamp-container";
 
 export default function HomePage() {
   return (
@@ -37,39 +35,29 @@ export default function HomePage() {
       <section className="py-20 bg-background ">
 
         <FeaturedWithLampServer />
-        {/* <div className="container mx-auto px-4 lg:px-8"> */}
 
-          {/* <ScrollReveal> */}
-          {/* <div className="text-center space-y-4 mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-              Featured Collection
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Handpicked pieces that showcase our finest craftsmanship
-            </p>
-          </div> */}
-          
-          {/* </ScrollReveal>
-          <ScrollReveal delay={200}>
-            
-          </ScrollReveal> */}
-        {/* </div> */}
       </section>
 
       {/* Craftsmanship Section */}
+
+
+
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0">
-          <img
+        {/* Full background pixel image */}
+        <div className="absolute inset-0 -z-10">
+          <PixelImage
             src="/jewelry-craftsmanship.jpg"
-            alt="Handcrafted jewelry"
+            customGrid={{ rows: 4, cols: 6 }}
             className="w-full h-full object-cover"
+            triggerOnScroll={true}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-accent/60 via-foreground/60 to-accent/60" />
         </div>
+
+        {/* Content */}
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <ScrollReveal>
             <div className="max-w-3xl mx-auto text-center space-y-6">
-              <Leaf className="h-16 w-16 text-primary mx-auto mb-4" />
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-background">
                 Handcrafted with Nature's Beauty
               </h2>
@@ -93,6 +81,7 @@ export default function HomePage() {
           </ScrollReveal>
         </div>
       </section>
+
 
       {/* Categories */}
       <section className="py-20 bg-background">
@@ -196,6 +185,18 @@ export default function HomePage() {
           </ScrollReveal>
         </div>
       </section>
-    </div>
+
+      {/* Scrolling Cards Section */}
+      <section className="py-24 bg-accent/10">
+        <ScrollReveal>
+
+
+          <MovingCards />
+
+        </ScrollReveal>
+      </section>
+
+
+    </div >
   );
 }
