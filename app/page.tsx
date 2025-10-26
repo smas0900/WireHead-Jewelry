@@ -40,35 +40,39 @@ export default function HomePage() {
 
       {/* Craftsmanship Section */}
 
+      <section className="relative h-screen overflow-hidden">
+        {/* Background Layer */}
+        <div className="absolute inset-0 -z-10 flex bg-fixed">
+          {/* Left half */}
+          <div className="w-1/2 h-full">
+            <PixelImage
+              src="/jewelry-craftsmanship.jpg"
+              customGrid={{ rows: 4, cols: 6 }}
+              className="w-full h-full object-cover"
+              triggerOnScroll={true}
+            />
+          </div>
 
+          {/* Right half */}
+          <div className="w-1/2 h-full">
+            <PixelImage
+              src="/jewlery-craftsmanship2.JPG"
+              customGrid={{ rows: 4, cols: 6 }}
+              className="w-full h-full object-cover"
+              triggerOnScroll={true}
+            />
+          </div>
 
-      <section className="relative py-32 overflow-hidden bg-cover bg-center">
-        {/* Full background pixel image */}
-        <div className="absolute inset-0 -z-10 ">
-          <PixelImage
-            src="/jewelry-craftsmanship.jpg"
-            customGrid={{ rows: 4, cols: 6 }}
-            className="w-full h-full object-cover"
-            triggerOnScroll={true}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-accent/60 via-foreground/60 to-accent/60" />
+          {/* Optional gradient overlay */}
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-accent/50 via-foreground/50 to-accent/50" /> */}
+          <div className="absolute left-1/2 top-0 w-[2px] h-full bg-white/30 backdrop-blur-sm z-0" />
+
         </div>
 
-        {/* Content */}
-        <div className="container mx-auto px-4 lg:px-8 absouloute z-10">
+        {/* Content Layer */}
+        <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-4 lg:px-8">
           <ScrollReveal>
-            <div className="max-w-3xl mx-auto text-center space-y-6">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-background">
-                Handcrafted with Nature's Beauty
-              </h2>
-              <p className="text-lg md:text-xl text-background/90 leading-relaxed">
-                Every piece is lovingly crafted by hand using traditional
-                wire-wrapping techniques and natural gemstones. Our artisan
-                approach celebrates the organic beauty found in nature, creating
-                wearable art that connects you to the earth.
-
-
-              </p>
+            <div className="max-w-3xl space-y-6">
               <Button
                 asChild
                 size="lg"
@@ -83,6 +87,8 @@ export default function HomePage() {
           </ScrollReveal>
         </div>
       </section>
+
+
 
 
       {/* Categories */}
