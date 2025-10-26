@@ -42,9 +42,9 @@ export default function HomePage() {
 
 
 
-      <section className="relative py-32 overflow-hidden">
+      <section className="relative py-32 overflow-hidden bg-cover bg-center">
         {/* Full background pixel image */}
-        <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 -z-10 ">
           <PixelImage
             src="/jewelry-craftsmanship.jpg"
             customGrid={{ rows: 4, cols: 6 }}
@@ -55,7 +55,7 @@ export default function HomePage() {
         </div>
 
         {/* Content */}
-        <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <div className="container mx-auto px-4 lg:px-8 absouloute z-10">
           <ScrollReveal>
             <div className="max-w-3xl mx-auto text-center space-y-6">
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-background">
@@ -66,6 +66,8 @@ export default function HomePage() {
                 wire-wrapping techniques and natural gemstones. Our artisan
                 approach celebrates the organic beauty found in nature, creating
                 wearable art that connects you to the earth.
+
+
               </p>
               <Button
                 asChild
@@ -84,6 +86,7 @@ export default function HomePage() {
 
 
       {/* Categories */}
+
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <ScrollReveal>

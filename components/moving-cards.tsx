@@ -158,7 +158,7 @@ const ScrollingCards = () => {
                     {/* Blur overlay only in button area */}
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
+                        animate={{ opacity: 0.8, scale: 1 }}
                         transition={{ duration: 0.6, delay: 0.5 }}
                         className="absolute inset-0 flex justify-center items-center pointer-events-none"
                     >
