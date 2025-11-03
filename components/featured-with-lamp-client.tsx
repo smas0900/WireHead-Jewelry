@@ -81,7 +81,9 @@ import { ScrollReveal } from "@/components/scroll-reveal"
 
 export function FeaturedWithLampClient({ children }: { children: React.ReactNode }) {
   return (
-    <section className="relative py-20 bg-gradient-to-b from-[#dcdcdc] via-[#e8e0f8] to-[#f3f3f3] overflow-hidden">
+    // <section className="relative py-20 bg-gradient-to-b from-[#dcdcdc] via-[#e8e0f8] to-[#f3f3f3] overflow-hidden">
+    <section className="relative py-20 overflow-hidden">
+
       {/* Lamp background effect */}
       <LampContainer>
         {/* Animated content container */}

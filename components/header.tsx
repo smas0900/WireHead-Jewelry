@@ -23,11 +23,10 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-500 ease-in-out group ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-500 ease-in-out group ${isScrolled
           ? "bg-white/30 backdrop-blur-md supports-[backdrop-filter]:bg-white/30 border-border text-foreground"
           : "bg-transparent border-white/20 text-white hover:bg-white/30 hover:backdrop-blur-md hover:supports-[backdrop-filter]:bg-white/30 hover:border-border hover:text-foreground"
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex flex-col items-center py-4">
@@ -78,39 +77,34 @@ export function Header() {
 
           {/* Bottom Row: Desktop Navigation */}
           <nav
-            className={`hidden md:flex items-center gap-8 border-t pt-4 w-full justify-center transition-colors duration-500 ${
-              isScrolled ? "border-border/50" : "border-white/20 group-hover:border-border/50"
-            }`}
+            className={`hidden md:flex items-center gap-8 border-t pt-4 w-full justify-center transition-colors duration-500 ${isScrolled ? "border-border/50" : "border-white/20 group-hover:border-border/50"
+              }`}
           >
             <Link
               href="/shop"
-              className={`text-sm font-medium transition-all duration-500 ${
-                isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
-              }`}
+              className={`text-sm font-medium transition-all duration-500 ${isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
+                }`}
             >
               Shop
             </Link>
             <Link
               href="/collections"
-              className={`text-sm font-medium transition-all duration-500 ${
-                isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
-              }`}
+              className={`text-sm font-medium transition-all duration-500 ${isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
+                }`}
             >
               Collections
             </Link>
             <Link
               href="/track-order"
-              className={`text-sm font-medium transition-all duration-500 ${
-                isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
-              }`}
+              className={`text-sm font-medium transition-all duration-500 ${isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
+                }`}
             >
               Track Order
             </Link>
             <Link
               href="/about"
-              className={`text-sm font-medium transition-all duration-500 ${
-                isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
-              }`}
+              className={`text-sm font-medium transition-all duration-500 ${isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
+                }`}
             >
               About
             </Link>
@@ -125,36 +119,32 @@ export function Header() {
             <div className="flex flex-col gap-4">
               <Link
                 href="/shop"
-                className={`text-sm font-medium transition-all duration-500 ${
-                  isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
-                }`}
+                className={`text-sm font-medium transition-all duration-500 ${isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
+                  }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Shop
               </Link>
               <Link
                 href="/collections"
-                className={`text-sm font-medium transition-all duration-500 ${
-                  isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
-                }`}
+                className={`text-sm font-medium transition-all duration-500 ${isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
+                  }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Collections
               </Link>
               <Link
                 href="/track-order"
-                className={`text-sm font-medium transition-all duration-500 ${
-                  isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
-                }`}
+                className={`text-sm font-medium transition-all duration-500 ${isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
+                  }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Track Order
               </Link>
               <Link
                 href="/about"
-                className={`text-sm font-medium transition-all duration-500 ${
-                  isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
-                }`}
+                className={`text-sm font-medium transition-all duration-500 ${isScrolled ? "hover:text-secondary" : "group-hover:text-foreground hover:text-foreground"
+                  }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
